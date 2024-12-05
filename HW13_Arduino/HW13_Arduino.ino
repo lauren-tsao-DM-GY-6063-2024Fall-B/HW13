@@ -3,13 +3,15 @@ void setup() {
 }
 
 void loop() {
-  int a0Val = analogRead(A0);  // Read sensor A0
-  int a1Val = analogRead(A1);  // Read sensor A1
+  // read sensor inputs
+  int a0Val = analogRead(A0);
+  int a1Val = analogRead(A1);
 
-  Serial.print(a0Val);         // Send A0 value
-  Serial.print(",");           // Separate the values by a comma
-  Serial.println(a1Val);       // Send A1 value and add newline
+  // print the values of a0Val input and a1Val input in one line, seperated by a comma
+  Serial.print(a0Val);
+  Serial.print(",");
+  Serial.println(a1Val);
 
-  delay(100);                  // Small delay
+  delay(100);
 }
 
