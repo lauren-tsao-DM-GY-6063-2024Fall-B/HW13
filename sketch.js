@@ -18,7 +18,7 @@ function receiveSerial() {
 
       // map the sensor values to appropriate ranges
       circleAsize = map(sensorVal1, 0, 4095, 16, 120); // map A0 values to circleA size values
-      circleBsize = map(sensorVal2, 0, 30, 8, 20); // map A0 values to circleB size values
+      circleBsize = map(sensorVal2, 0, 30, 8, 20); // map A1 values to circleB size values
     }
   }
 }
@@ -46,7 +46,7 @@ function setup() {
   connectButton = createButton("Click me to connect To Serial!");
   connectButton.position(width / 2 - 210, height / 2);
 
-  // styling button
+  // styling the button
   connectButton.style('font-family', 'Courier New'); // change font
   connectButton.style('font-size', '24px'); // change font size
   connectButton.style('color', '#ffffff'); // change font color
