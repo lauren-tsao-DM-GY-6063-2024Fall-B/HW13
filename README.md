@@ -1,17 +1,13 @@
-# HW13 Template
+## Creative Coding (DM-GY 6063) - Programming: Week 13
 
-Arduino reads a button on pin 2 and a potentiometer on pin A0 and passes those values on to the p5js sketch via a Serial connection.
+### Description of Logic
+- After going through our assignments, I found HW03A would be a nice canvas to improve on using the Arduino.
+- I used a potentiometer to control the size of the bigger circles, and a LDR for the size of the smaller circles.
+- The sizes are directly proportional to the values that p5.js receives from Arduino. As the values increase and decrease, so do the size of the circles. When the values read 0, the circles return to their original sizes.
+- I applied the Exclusion blending mode to the bigger circles so that when they overlap with the smaller ones, the overlapped areas turn black and white.
 
-The object that is created and sent to p5js looks like this:
+### Finite State Machine
+- Please click [here](https://drive.google.com/file/d/1mAJnIPA9eqOFGp4AZO2v27zLJDNgTccV/view?usp=sharing).
 
-```
-data = {
-  A0: { value: integer },
-  D2: {
-    isPressed: boolean,
-    count: integer
-  }
-}
-```
-
-In p5js `A0.value` is used to change ellipse size, `D2.isPressed` is used to add new ellipses to an array and `D2.count` is used to change the color of new ellipses.
+### Schematic
+- Please click [here](https://drive.google.com/file/d/10ieMbInDyBM35ss2SUYxwHX9n6Bjt899/view?usp=sharing).

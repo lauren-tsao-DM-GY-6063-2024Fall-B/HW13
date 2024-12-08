@@ -4,7 +4,7 @@ let circleBsize;
 let circleAsize;
 
 function receiveSerial() {
-  let line = mSerial.readUntil("\n"); // read from serial line (println from Arduino) until gets to the end of the line
+  let line = mSerial.readUntil("\n"); // read from serial line (println from Arduino) until the end of the line
 
   if (line) {
     print(line); // print above received line to javascript console
